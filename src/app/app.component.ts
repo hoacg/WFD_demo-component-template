@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-comp-temp';
+
+  newMessage: string;
+
+  messageHandler(message) {
+    console.log('AppComponent:$event', message);
+    this.newMessage = message.message;
+  }
 }
